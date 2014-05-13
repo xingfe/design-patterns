@@ -16,3 +16,4 @@
  
  //Example
  std::cout << Singleton::getInstance().method();
+ //
