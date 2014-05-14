@@ -1,5 +1,5 @@
 Singleton pattern gives client access to only one instance of class.
 
 Use when:
-Use this appropach when class is memory expensive or is creation and
+Use this appropach when class is memory expensive or its creation and
 inicjalization is time expensive. 
