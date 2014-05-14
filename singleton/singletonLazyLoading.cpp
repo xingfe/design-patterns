@@ -14,6 +14,9 @@
         }
  };
  
- //Example
- std::cout << Singleton::getInstance().method();
- //
+int main()
+{
+	Singleton& s = Singleton::getInstance();
+	std::cout << s.method() << endl;
+	return 0;
+}
