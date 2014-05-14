@@ -16,15 +16,10 @@ public:
 	std::string method2() { return " pattern"; }
 };
 
-class AdapterImplementation : public ClientInterface
-{
-	Adaptee adapteeInstance;
-
+class AdapterImplementation : public ClientInterface, private Adaptee
+{	
 public:
-	virtual std::string method() 
-	{ 
-	    return adapteeInstance.method1() + adapteeInstance.method2();
-        }
+	virtual std::string method() { return method1() + method2(); }
 };
 
 int main()
