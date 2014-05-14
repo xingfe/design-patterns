@@ -1,0 +1,12 @@
+Proxy pattern allow to replace original impementation of object to
+another. 
+
+The reasons for replacement: 
+
++ Some optymalization e.g. create instance of object when
+  is realy neccecery  (virtual proxy).
++ Protect some oryginal object methods before calling.
+  (protection proxy)
++ Pretent local object while calling objects that are runnig
+  on diffrent machine (remote proxy)
+  
