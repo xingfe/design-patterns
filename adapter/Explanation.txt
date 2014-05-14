@@ -1,0 +1,9 @@
+Adapter pattern allow to convert one interface to another different
+interface.
+
+Use when:
+Use this appropach when you have to use external class/library or
+class that might be frequently changed it's interface. 
+In other words apater pattern allows separate client code from 
+particular implementation.
+ 
