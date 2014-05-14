@@ -3,8 +3,8 @@ without use inheritance. Decorator is de facto alternative
 way to inheritance. 
 
 Decorator is similar to adapter except
-that adapter is use to change onet interface to another 
-but decorator switch behavior without changing interface. 
+that adapter is use to change one interface to another, 
+decorator switch behavior without changing interface. 
  
 
 Use when:
