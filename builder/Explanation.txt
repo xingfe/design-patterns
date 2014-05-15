@@ -1,5 +1,6 @@
 Builder pattern allows separete creation object procedure 
-from its reprezetation.
+from its reprezetation (Separete complex object construction
+from its representation)
 
 Use:
 When you want to construct complicated objects.

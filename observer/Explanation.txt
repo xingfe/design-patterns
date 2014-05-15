@@ -1,6 +1,6 @@
-Observer pattern allow object to inform other object of the fact
+Observer pattern allow object to inform other objects of the fact
 that his state was changed.
 
 Objects (Observers) that are interested in which state 
-Observer is have to be registered in it.  
+Subject is have to be registered in it.  
  
