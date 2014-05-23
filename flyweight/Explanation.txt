@@ -1,0 +1,2 @@
+Flyweight pattern allows to reduce memory consumption by 
+sharing data with other similar objects.
