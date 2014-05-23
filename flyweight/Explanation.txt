@@ -1,2 +1,4 @@
 Flyweight pattern allows to reduce memory consumption by 
-sharing data with other similar objects.
+sharing data with other similar objects. You achieve this
+by allow client code create only one instance of object in some state
+(sharing data).
