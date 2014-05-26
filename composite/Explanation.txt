@@ -1,0 +1,2 @@
+composite design pattern allows you to treat individual objects and
+compositions of objects in the same way.
