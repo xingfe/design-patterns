@@ -3,46 +3,44 @@
 
 using namespace std;
 
-class ClientInterface
+class Subject
 {
 public:
 	virtual string method() = 0;
 };
 
-class ClientImplemantation : public ClientInterface
+class RealSubject : public Subject
 {
 public:
 	virtual string method() { return "proxy pattern"; }
 };
 
 
-class VirtualProxy : public ClientInterface
+class VirtualProxy : public Subject
 {
-	ClientImplemantation * impl;
+	RealSubject * impl;
 
 public:
 	VirtualProxy() :impl(NULL)  {}
 
 	virtual ~VirtualProxy() { if (impl != NULL) delete impl; }
 
-	virtual string method() 
+	virtual string method()
 	{
 		// first call method creates object
 		if (NULL == impl)
-			impl = new ClientImplemantation();
+			impl = new RealSubject();
 
 		return impl->method();
 	}
 
 };
 
-
-
 int main()
 {
 	VirtualProxy proxy;
-	ClientInterface& interf =  proxy;
+	Subject& interf = proxy;
 	cout << interf.method() << endl;
-	
+
 	return 0;
 }
