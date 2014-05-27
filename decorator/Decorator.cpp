@@ -3,40 +3,35 @@
 
 using namespace std;
 
-class ClientInterface
+class Component
 {
 public:
-	virtual std::string method() = 0;
+	virtual string method() = 0;
 };
 
-class ClientInterfaceImpl : public ClientInterface
+class ConcreteComponent : public Component
 {
-	virtual std::string method() { return "pattern"; }
+	string method() { return "pattern"; }
 };
 
-class Decorator : public ClientInterface
+class Decorator : public Component
 {
-	ClientInterface & innerInstance;
+	Component & component;
 
 public:
-	Decorator(ClientInterface & dec) : innerInstance(dec) {}
-	virtual std::string method() { return "Decorator " + innerInstance.method() + "\n"; }
+	Decorator(Component & c) : component(c) { }
+	string method() { return "Decorator " + component.method(); }
 };
 
 
 int main()
 {
-	ClientInterfaceImpl Impl1;
-	Decorator Impl2(Impl1);
-	Decorator Impl3(Impl2);
+	ConcreteComponent comp1;
+	Decorator dec1(comp1);
+	Decorator dec2(static_cast<Component&>(dec1));
 
-	ClientInterface* Impl = NULL;
-	
-	Impl = &Impl2;
-	cout << Impl->method();
-
-	Impl = &Impl3;
-	cout << Impl->method();
+	cout << dec1.method() << endl;
+	cout << dec2.method() << endl;
 
 	return 0;
 }

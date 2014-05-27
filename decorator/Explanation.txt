@@ -1,13 +1,10 @@
 Decorator pattern allow to change behavior of the object 
-without use inheritance. Decorator is de facto alternative
-way to inheritance. 
+dynamically.  
+Decorator switch behavior without changing interface.
+Decorator is de facto alternative way to inheritance but
+is more flexible because you can add new behavior at runtime.
 
-Decorator is similar to adapter except
-that adapter is use to change one interface to another, 
-decorator switch behavior without changing interface. 
+ 
  
 
-Use when:
-In other words this pattern allows separate client code from 
-particular implementation.
  
