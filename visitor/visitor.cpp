@@ -36,7 +36,7 @@ public:
 
 	void visitPet(Pet& visitable)
 	{
-		cout << "GrandFather gives pet something god to eat" << endl;
+		cout << "GrandFather gives pet something good to eat" << endl;
 	}
 };
 

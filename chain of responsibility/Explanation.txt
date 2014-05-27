@@ -1,0 +1,6 @@
+Chain of responsibility helps to separate sender of a request and receiver 
+of the request by giving more than one object a chance to handle the request.
+(Sender don't know which object in the chain will handle its request)
+Reqest is sent to an object and if that object can't handle it, it
+sends it to another object in chain that may be able to handle it.
+Objective version of switch statement.
