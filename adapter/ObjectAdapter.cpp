@@ -3,25 +3,25 @@
 
 using namespace std;
 
-class ClientInterface
+class AdapterInterface
 {
 public:
-	virtual std::string method() = 0;
+	virtual string method() = 0;
 };
 
 class Adaptee
 {
 public:
-	std::string method1() { return "Adapter";  }
-	std::string method2() { return " pattern"; }
+	string method1() { return "Adapter";  }
+	string method2() { return " pattern"; }
 };
 
-class AdapterImplementation : public ClientInterface
+class AdapterImplementation : public AdapterInterface
 {
 	Adaptee adapteeInstance;
 
 public:
-	virtual std::string method() 
+	virtual string method() 
 	{ 
 	    return adapteeInstance.method1() + adapteeInstance.method2();
         }
@@ -30,7 +30,7 @@ public:
 int main()
 {
 	AdapterImplementation adapImpl;
-	ClientInterface& adapter = adapImpl;
+	AdapterInterface& adapter = adapImpl;
 	cout << adapter.method();
 
 	return 0;
