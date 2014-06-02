@@ -1,6 +1,5 @@
 Bridge design patter allows you to separate class interface (abstraction)
-from its implementation so you can change or replace the implementation 
-without changing the client code.
+from its implementation so you can easy change both independently.
 
 The UML class diagram for the Strategy pattern is the same as the diagram 
 for the Bridge pattern. However, these two design patterns aren't the same
