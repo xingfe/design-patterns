@@ -7,36 +7,30 @@ using namespace std;
 class Memento
 {
 	string state;
-
 public:
-	Memento(string s) : state(s) {}
-	string getState() { return state; }
-	void setState(string s) { state = s; }
+	Memento(const string & s) : state(s) {}
+	string getState() const { return state; }
+	void setState(const string & s) { state = s; }
 };
 
 //Originator: It is the one whose state needs to be saved and creates the Memento object.
 class Originator
 {
 	string state;
-
 public:
-
 	Originator() {}
-	Memento * createMomento() { return new Memento(state); }
-	void setMomento(Memento m) { state = m.getState(); }
-
+	Memento createMomento() { Memento m(state); return m; }
+	void setMomento(const Memento & m) { state = m.getState(); }
 };
-
 
 
 int main()
 {
-	Originator org;
-	Memento mem("state1");
-	org.setMomento(mem);
-	Memento * pmem = org.createMomento();
-	cout << pmem->getState();
-	delete pmem;
+	Originator orginator;
+	Memento memento("memento design pattern");
+	orginator.setMomento(memento);
+	Memento mem = orginator.createMomento();
+	cout << mem.getState();
 
 	return 0;
 }
