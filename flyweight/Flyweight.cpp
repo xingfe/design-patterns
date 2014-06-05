@@ -3,71 +3,56 @@
 #include <map>
 #include <set>
 
+
 using namespace std;
 
-
-class Flyweight 
+class Flyweight
 {
 	string state;
-
 public:
-	Flyweight(string state) { this->state = state; }
+	Flyweight(const string& s) { state = s; }
 	~Flyweight() {}
-
-	string doSomething(string s) { return s + " " + state; };
-	
+	string doSomething(const string& s) { return s + " " + state; }
 };
-
 
 class FlyweightFactory
 {
 	map<string, Flyweight*> flyweights;
-
-	void relaseFlyweights()  
+	void relaseFlyweights()
 	{
-		for (map<string, Flyweight*>::iterator it = flyweights.begin();
-			it != flyweights.end();
-			++it)
+		map<string, Flyweight*>::iterator it = flyweights.begin();
+		for (; it != flyweights.end(); ++it)
 		{
 			delete it->second;
 		}
 	}
-
-	bool isFlyweightExist(string key)
+	bool isFlyweightExist(const string& key)
 	{
 		map<string, Flyweight*>::iterator it;
 		it = flyweights.find(key);
 		return it != flyweights.end();
 	}
-
-	Flyweight* createFlyweight(string key)
+	Flyweight* createFlyweight(const string& key)
 	{
 		return new Flyweight(key);
 	}
-
-	
 public:
-
 	FlyweightFactory() {}
-	~FlyweightFactory() 
-	{
-		relaseFlyweights();
-	}
+	~FlyweightFactory() { relaseFlyweights(); }
 
 	Flyweight* getFlyweight(string key)
 	{
 		if (isFlyweightExist(key))
 			return flyweights[key];
-		
+
 		Flyweight* newFlyweight = createFlyweight(key);
 		flyweights[key] = newFlyweight;
 
 		return newFlyweight;
 	}
 
-	int getFlyweightsNumber() { return flyweights.size();  }
+	int getFlyweightsNumber() { return flyweights.size(); }
 };
-
 
 int main()
 {
@@ -83,7 +68,6 @@ int main()
 	hues.insert("dark");
 	hues.insert("light");
 
-
 	set<string>::iterator i;
 	for (i = hues.begin(); i != hues.end(); ++i)
 	{
@@ -94,7 +78,6 @@ int main()
 			cout << flyweight->doSomething(*i) << endl;
 		}
 	}
-
 	cout << "getFlyweightsNumber : ";
 	cout << factory.getFlyweightsNumber() << endl;
 
