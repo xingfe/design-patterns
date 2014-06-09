@@ -1,130 +1,77 @@
 #include <iostream>
 #include <string>
-#include <vector>
 
 using namespace std;
 
-enum ProductType 
+enum eProduct
 {
 	PRODUCT1,
 	PRODUCT2,
 	SIZE
 };
 
-class Product 
+class Product
 {
 public:
-	virtual string getDescription() = 0;
+	virtual string method() = 0;
 };
 
-class FM1Product1 : public Product
+class Product1 : public Product
 {
 public:
-	string getDescription() { return "FM1Product1"; }
+	string method() { return "Product1::method"; }
 };
 
-class FM1Product2 : public Product
+class Product2 : public Product
 {
 public:
-	string getDescription() { return "FM1Product2"; }
+	string method() { return "Product2::method"; }
 };
 
-class FM2Product1 : public Product
+class Creator 
 {
+protected:
+	virtual Product * factoryMethod(eProduct type) = 0;
 public:
-	string getDescription() { return "FM2Product1"; }
-};
-
-class FM2Product2 : public Product
-{
-public:
-	string getDescription() { return "FM2Product2"; }
-};
-
-
-class FactoryMethod 
-{
-public:
-	virtual Product * createProduct(ProductType type) = 0;
-};
-
-class FactoryMethod1 : public FactoryMethod
-{
-public:
-	Product * createProduct(ProductType type) 
+	void anOperation() 
 	{
-		Product * product = NULL;
+		eProduct products[] = { PRODUCT1, PRODUCT2 };
 
-		switch (type)
+		for (int i = 0; i < eProduct::SIZE; ++i)
 		{
-			case ProductType::PRODUCT1:
-
-				product = new FM1Product1();
-
-				break;
-			
-			case ProductType::PRODUCT2:
-
-				product = new FM1Product2();
-
-				break;
-			default:
-				break;
+			Product * p = factoryMethod(products[i]);
+			cout << p->method() << endl;
+			delete p;
 		}
-
-		return product;
 	}
 };
 
-class FactoryMethod2 : public FactoryMethod
+class ConcreteCreator : public Creator
 {
-public:
-	Product * createProduct(ProductType type)
+protected:
+	Product * factoryMethod(eProduct type)
 	{
-		Product * product = NULL;
-
+		Product * ret = NULL;
 		switch (type)
 		{
-		case ProductType::PRODUCT1:
-
-			product = new FM2Product1();
-
+		case eProduct::PRODUCT1:
+			ret = new Product1;
 			break;
-		
-		case ProductType::PRODUCT2:
-
-			product = new FM2Product2();
-
+		case eProduct::PRODUCT2:
+			ret = new Product2;
 			break;
 		default:
+
 			break;
 		}
-
-		return product;
+		return ret;
 	}
 };
 
 int main()
 {
-	FactoryMethod1 fm1;
-	FactoryMethod2 fm2;
-
-	vector<FactoryMethod*> v;
-	v.push_back(&fm1);
-	v.push_back(&fm2);
-
-	ProductType products[] = { ProductType::PRODUCT1, ProductType::PRODUCT2 };
-
-	vector<FactoryMethod*>::iterator it = v.begin();
-	for (; it != v.end(); ++it)
-	{
-		for (int i = 0; i < ProductType::SIZE; ++i)
-		{
-			Product *p = (*it)->createProduct(products[i]);
-			cout << p->getDescription() << endl;
-			delete p;
-		}
-	}
+	ConcreteCreator cr;
+	cr.anOperation();
 
 	return 0;
 }

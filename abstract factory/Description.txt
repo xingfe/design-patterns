@@ -1,0 +1,23 @@
+Abstract factory gives client interface to create families (more then one family). 
+(releted or depenedent on each other) of objects without 
+force him (client) to use real class names (e.g. new className)
+in fact client don't know whitch class (implementation) he 
+realy using - he only use abstraction (interface).
+
+The maim diffrence between abstract factory and factory method
+is that Factory method produce one family of object while 
+abstract factory produce families of objects  
+(abstract factory is often implemented as few factory methods ).
+Another diffrence is in intend of using the abstraction 
+(interface). Factory method use abstraction only to postpone
+creation concreate objects to subclass - to create object
+you have to extends base class and overriate factory method.
+Abstract factory uses abstraction also to separete client
+code from diffrent implementation of factory - you create
+concreate factory implementation and pass it to the code
+which use abstract factory interface.
+
+
+
+ 
+ 

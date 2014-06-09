@@ -5,7 +5,7 @@ using namespace std;
 
 enum RequestType
 {
-	REQ_CEO,
+	REQ_DIRECTOR,
 	REQ_MANAGER,
 	REQ_WORKER
 };
@@ -33,14 +33,14 @@ public:
 	virtual void handle(const Reqest & req) = 0;
 };
 
-class CEO : public ChainHandler
+class Director : public ChainHandler
 {
 public:
 	void handle(const Reqest & req) 
 	{
-		if (req.reqType == RequestType::REQ_CEO)
+		if (req.reqType == RequestType::REQ_DIRECTOR)
 		{
-			cout << "CEO is handle reqest" << endl;
+			cout << "Director is handle reqest" << endl;
 		}
 		else
 		{
@@ -85,17 +85,17 @@ public:
 
 int main()
 {
-	CEO ceo;
+	Director director;
 	Manager manager;
 	Worker worker;
 
-	ceo.setNextChain(&manager);
+	director.setNextChain(&manager);
 	manager.setNextChain(&worker);
 
 	Reqest req;
 	req.reqType = RequestType::REQ_WORKER;
 
-	ceo.handle(req);
+	direcor.handle(req);
 
 	return 0;
 }

@@ -1,2 +1,2 @@
 Strategy pattern allow to define family of algorithms encapsulate each one
-in the class and make exchange them easily. 
+in the class and make exchange them easy. 
