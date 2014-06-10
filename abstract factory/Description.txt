@@ -17,7 +17,7 @@ code from diffrent implementation of factory - you create
 concreate factory implementation and pass it to the code
 which use abstract factory interface.
 
-
+Injection by composition
 
  
  
