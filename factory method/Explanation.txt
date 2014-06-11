@@ -1,6 +1,6 @@
-Factory method design pattern solve problem of creation objects of one family without 
-using class names. This is done by create specjal method called factory method
-which let bury implementation details in subclasses - subclasses decide which real class 
-(implementation) should be used to create object. 
+Factory method design pattern solve problem of creation by client objects of one 
+family without using class names. This is done by create special method 
+called factory method which let bury implementation details in subclasses
+ - subclasses decide which real object (implementation) should be created. 
 
-Injection by inheritance
+Example of injection code by using inheritance.
