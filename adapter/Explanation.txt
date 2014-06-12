@@ -1,7 +1,9 @@
-Adapter pattern allow to convert one interface to another interface.
+Adapter pattern allow to convert one class interface to another. 
+Adatepter let you add existing class new inteface which better 
+fits to existing code.
 
-Use when:
-Use this appropach when you have to use external class/library or
-class that might frequently changed its interface. 
 
- 
+You should always use this appropach when you use in your code
+external class or library. Because you would be able easy switch
+to another library (e.g new version, different faster) by doing 
+changes only in one class not in whole system.
