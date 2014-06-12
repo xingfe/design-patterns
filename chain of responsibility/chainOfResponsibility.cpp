@@ -10,78 +10,76 @@ enum RequestType
 	REQ_WORKER
 };
 
-class Reqest {
+class Reqest 
+{
+	string order;
 public:
+	Reqest(const string & desc) : order(desc) {}
 	RequestType reqType;
+	const string& getOrder() const { return order; }
 };
 
-class ChainHandler 
+class ChainHandler
 {
 	ChainHandler *nextChain;
-
-protected:
-
 	void sendReqestToNextHandler(const Reqest & req)
 	{
 		if (nextChain != NULL)
 			nextChain->handle(req);
 	}
-
+protected:
+	virtual bool canHandleRequest(const Reqest & req) = 0;
+	virtual void doWork(const Reqest & req) = 0;
 public:
 	ChainHandler() { nextChain = NULL; }
-	virtual void setNextChain(ChainHandler *nextChain) { this->nextChain = nextChain; }
-	virtual void handle(const Reqest & req) = 0;
+	void setNextChain(ChainHandler *next) { nextChain = next; }
+	void handle(const Reqest & req)
+	{
+		if (canHandleRequest(req))
+			doWork(req);
+		else
+			sendReqestToNextHandler(req);
+	}
 };
 
 class Director : public ChainHandler
 {
-public:
-	void handle(const Reqest & req) 
+protected:
+	bool canHandleRequest(const Reqest & req)
 	{
-		if (req.reqType == RequestType::REQ_DIRECTOR)
-		{
-			cout << "Director is handle reqest" << endl;
-		}
-		else
-		{
-			sendReqestToNextHandler(req);
-		}
+		return req.reqType == RequestType::REQ_DIRECTOR;
+	}
+	void doWork(const Reqest & req)
+	{
+		cout << "Director is handle reqest: " << req.getOrder() <<  endl;
 	}
 };
 
 class Manager : public ChainHandler
 {
-public:
-	
-	void handle(const Reqest & req)
+protected:
+	bool canHandleRequest(const Reqest & req)
 	{
-		if (req.reqType == RequestType::REQ_MANAGER)
-		{
-			cout << "Manager is handle reqest" << endl;
-		}
-		else
-		{
-			sendReqestToNextHandler(req);
-		}
+		return req.reqType == RequestType::REQ_MANAGER;
+	}
+	void doWork(const Reqest & req)
+	{
+		cout << "Manager is handle reqest: " << req.getOrder() << endl;
 	}
 };
 
 class Worker : public ChainHandler
 {
-public:
-	void handle(const Reqest & req)
+protected:
+	bool canHandleRequest(const Reqest & req)
 	{
-		if (req.reqType == RequestType::REQ_WORKER)
-		{
-			cout << "Worker is handle reqest" << endl;
-		}
-		else
-		{
-			sendReqestToNextHandler(req);
-		}
+		return req.reqType == RequestType::REQ_WORKER;
+	}
+	void doWork(const Reqest & req)
+	{
+		cout << "Worker is handle reqest: " << req.getOrder() << endl;
 	}
 };
-
 
 int main()
 {
@@ -92,10 +90,10 @@ int main()
 	director.setNextChain(&manager);
 	manager.setNextChain(&worker);
 
-	Reqest req;
+	Reqest req("Do task #3212");
 	req.reqType = RequestType::REQ_WORKER;
 
-	direcor.handle(req);
+	director.handle(req);
 
 	return 0;
 }
