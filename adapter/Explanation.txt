@@ -6,4 +6,4 @@ fits to existing code.
 You should always use this appropach when you use in your code
 external class or library. Because you would be able easy switch
 to another library (e.g new version, different faster) by doing 
-changes only in one class not in whole system.
+changes only in one class not in entire system.
