@@ -24,7 +24,6 @@ public:
 class Facade
 {
 	Subsystem1 sub1;
-	SubsystemB subB;
 	Subsystem3 *sub3;
 
 public:
@@ -40,6 +39,7 @@ public:
 
 	void easyToUseMethod2()
 	{
+		SubsystemB subB;
 		subB.methodC();
 		sub1.method1();
 	}
