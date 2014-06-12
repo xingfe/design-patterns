@@ -15,61 +15,53 @@ public:
 class Collection
 {
 public:
-	virtual Iterator& getIterator() = 0;
+	virtual Iterator* getIterator() = 0;
 };
 
 class ConcreteCollection : public vector<void*>, public Collection
-{
-	Iterator *iterator;
+{	
 public:
-	ConcreteCollection() : iterator(NULL) {}
-	~ConcreteCollection() { if (iterator != NULL) delete iterator; }
 	void add(void *e) { push_back(e); }
-	Iterator& getIterator();
+	Iterator* getIterator();
 };
+
 
 class ConcreteIterator : public Iterator
 {
 	ConcreteCollection & collection;
 	size_t position;
-
 public:
-	ConcreteIterator(ConcreteCollection & col) : collection(col) 
+	ConcreteIterator(ConcreteCollection & col) : collection(col)
 	{
 		position = 0;
 	}
 	void * first()
-	{ 
+	{
 		position = 0;
-		return collection[position]; 
+		return collection[position];
 	}
-	void * next() 
-	{ 
-		++position; 
-		if(position < collection.size())
+	void * next()
+	{
+		++position;
+		if (position < collection.size())
 			return collection[position];
 
 		return NULL;
-
 	}
-	bool isDone() 
+	bool isDone()
 	{
 		if (position < collection.size())
 			return false;
 
 		return true;
 	}
-
 	void * current() { return collection[position]; }
-
 };
 
-Iterator& ConcreteCollection::getIterator()
-{
-	if (iterator == NULL )
-		iterator = new ConcreteIterator(*this);
 
-	return *iterator;
+Iterator* ConcreteCollection::getIterator()
+{
+	return new ConcreteIterator(*this);;
 }
 
 int main()
@@ -81,13 +73,15 @@ int main()
 	colection.add(&b);
 	colection.add(&c);
 
-	Iterator &iter = colection.getIterator();
+	Iterator *iter = colection.getIterator();
 
-	for (iter.first(); !iter.isDone(); iter.next())
+	for (iter->first(); !iter->isDone(); iter->next())
 	{
-		void * pItem = iter.current();
+		void * pItem = iter->current();
 		cout << *(static_cast<int*>(pItem)) << endl;
 	}
+
+	delete iter;
 
 	return 0;
 }
