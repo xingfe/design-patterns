@@ -15,7 +15,7 @@ public:
 	}
 };
 
-class App : public ApplicationFramework
+class Application : public ApplicationFramework
 {
 protected:
 	void step1() { cout << "Template method" << endl; }
@@ -24,7 +24,7 @@ protected:
 
 int main()
 {
-	App app;
+	Application app;
 	app.templateMethod();
 
 	return 0;
