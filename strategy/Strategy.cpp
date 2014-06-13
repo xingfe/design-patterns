@@ -3,44 +3,42 @@
 
 using namespace std;
 
-class Algorithm
+class Strategy
 {
 public:
-	virtual void doWork() = 0;
+	virtual void execute() = 0;
 };
 
-class Algorithm1 : public Algorithm
+class Strategy1 : public Strategy
 {
 public:
-	void doWork() { cout << "Algorithm1" << endl; }
+	void execute() { cout << "Strategy1" << endl; }
 };
 
-class Algorithm2 : public Algorithm
+class Strategy2 : public Strategy
 {
 public:
-	void doWork() { cout << "Algorithm2" << endl; }
+	void execute() { cout << "Strategy2" << endl; }
 };
-
 
 class Context
 {
-	Algorithm * algrithm = NULL;
+	Strategy * strategy = NULL;
 public:
-	Context(Algorithm& alg) : algrithm(&alg) {}
-	void setAlgorithm(Algorithm &alg) { algrithm = &alg; }
-	void doWork() { algrithm->doWork(); }
+	Context(Strategy& s) : strategy(&s) {}
+	void setStrategy(Strategy& s) { strategy = &s; }
+	void executeStrategy() { strategy->execute(); }
 };
-
 
 int main()
 {
-	Algorithm1 alg1;
-	Algorithm2 alg2;
+	Strategy1 strategy1;
+	Strategy2 strategy2;
 
-	Context context(alg1);
-	context.doWork();
-	context.setAlgorithm(alg2);
-	context.doWork();
+	Context context(strategy1);
+	context.executeStrategy();
+	context.setStrategy(strategy2);
+	context.executeStrategy();
 
 	return 0;
 }

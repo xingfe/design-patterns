@@ -6,8 +6,8 @@ using namespace std;
 class Receiver
 {
 public:
-	void method1() { cout << "Command" << endl; }
-	void method2() { cout << "design pattern" << endl; }
+	void action1() { cout << "Command" << endl; }
+	void action2() { cout << "design pattern" << endl; }
 };
 
 class Command
@@ -21,9 +21,9 @@ class ConcreteCommand1 : public Command
 	Receiver & receiver;
 public:
 	ConcreteCommand1(Receiver & r) : receiver(r) {}
-	void execute() 
+	void execute()
 	{
-		receiver.method1();
+		receiver.action1();
 	}
 };
 
@@ -34,18 +34,18 @@ public:
 	ConcreteCommand2(Receiver & r) : receiver(r) {}
 	void execute()
 	{
-		receiver.method2();
+		receiver.action2();
 	}
 };
 
 
 
-class Invoker 
+class Invoker
 {
 	vector<Command*> commands;
 public:
 	void addCommand(Command *c) { commands.push_back(c); }
-	void executeCommands() 
+	void executeCommands()
 	{
 		vector<Command*>::iterator it = commands.begin();
 		for (; it != commands.end(); ++it)

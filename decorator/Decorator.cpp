@@ -6,21 +6,28 @@ using namespace std;
 class Component
 {
 public:
-	virtual string method() = 0;
+	virtual void operation() = 0;
 };
 
 class ConcreteComponent : public Component
 {
-	string method() { return "pattern"; }
+	void operation() { cout << "pattern"; }
 };
 
 class Decorator : public Component
 {
 	Component & component;
+	void beforeOperation() { cout << "decorator "; }
+	void afterOperation() { cout << "."; }
 
 public:
 	Decorator(Component & c) : component(c) { }
-	string method() { return "Decorator " + component.method(); }
+	void operation() 
+	{ 
+		beforeOperation();
+		component.operation();
+		afterOperation();
+	}
 };
 
 
@@ -28,10 +35,12 @@ int main()
 {
 	ConcreteComponent comp1;
 	Decorator dec1(comp1);
-	Decorator dec2(static_cast<Component&>(dec1));
+	Component &comp = dec1;
+	Decorator dec2(comp);
 
-	cout << dec1.method() << endl;
-	cout << dec2.method() << endl;
+	dec1.operation();
+	cout << endl;
+	dec2.operation();
 
 	return 0;
 }

@@ -3,53 +3,56 @@
 
 using namespace std;
 
-class Woman 
+class Context
 {
-	class Behavior
+	class State
 	{
 	public:
-		virtual string whoAreYou() = 0;
-		virtual ~Behavior() {}
-	};
-	class Angel : public Behavior
-	{
-	public:
-		string whoAreYou() { return "Angel"; }
-		virtual ~Angel() {}
-	};
-	class Devil : public Behavior
-	{
-	public:
-		string whoAreYou() { return "Devil"; }
-		virtual ~Devil() {}
+		virtual void handle() = 0;
+		virtual ~State() {}
 	};
 
-	Behavior *behavior;
+	class ConcreteState1 : public State
+	{
+	public:
+		void handle() { cout << "ConcreteState1"; }
+	};
+
+	class ConcreteState2 : public State
+	{
+	public:
+		void handle() { cout << "ConcreteState2"; }
+	};
+
+	State *state;
+	bool bState;
 public:
-	Woman() : behavior(new Angel) {}
-	~Woman() { delete behavior; }
-	string tellWhoAreYou() { return behavior->whoAreYou(); }
-	void lookSheHasTheSameSkirt() 
+	Context() : state(new ConcreteState1), bState(false) {}
+	~Context() { delete state; }
+	void request() { return state->handle(); }
+	void changeStateOperation()
 	{
-		delete behavior;
-		behavior = new Devil;
-	}
-	void youLookNiceToday()
-	{
-		delete behavior;
-		behavior = new Angel;
+		delete state;
+		bState = !bState;
+
+		if (bState)
+			state = new ConcreteState2;
+		else
+			state = new ConcreteState1;
 	}
 };
 
 
 int main()
 {
-	Woman woman;
-	cout << woman.tellWhoAreYou() << endl;
-	woman.lookSheHasTheSameSkirt();
-	cout << woman.tellWhoAreYou() << endl;
-	woman.youLookNiceToday();
-	cout << woman.tellWhoAreYou() << endl;
+	Context ctx;
+	ctx.request();
+	cout << endl;
+	ctx.changeStateOperation();
+	ctx.request();
+	cout << endl;
+	ctx.changeStateOperation();
+	ctx.request();
 
 	return 0;
 }
