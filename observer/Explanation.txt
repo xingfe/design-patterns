@@ -1,6 +1,5 @@
 Observer pattern allow object to inform other objects of the fact
 that his state was changed.
-
 Objects (Observers) that are interested in which state 
 Subject is have to be registered in it.  
  
