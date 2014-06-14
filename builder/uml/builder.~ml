@@ -173,6 +173,12 @@
 <XPD:REF name="Associations[0]">CR2u8fXClk6AaXBwUAnGNgAA</XPD:REF>
 <XPD:REF name="Associations[1]">vf1vJuAPo0+m+ih7N3LpvwAA</XPD:REF>
 <XPD:REF name="Associations[2]">bBTDr1yP8USRR+2Vj6dg6QAA</XPD:REF>
+<XPD:ATTR name="#Attributes" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="o852FsmIj0WkTXpsLmz92wAA">
+<XPD:ATTR name="Name" type="string">product</XPD:ATTR>
+<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
+<XPD:REF name="Owner">KWsC5Qq4DEWBL/F+KzzwmgAA</XPD:REF>
+</XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[8]" type="UMLGeneralization" guid="2qhzBk6CdU+zvi/x+IozJAAA">
 <XPD:REF name="Namespace">jaYaPwiK/E+ij83rOSc4XgAA</XPD:REF>
@@ -788,10 +794,10 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[2]" type="UMLClassView" guid="tnp4bTD6ckGynnBy+pxVhgAA">
-<XPD:ATTR name="Left" type="integer">193</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">192</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">146</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">123</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">82</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">95</XPD:ATTR>
 <XPD:REF name="Model">KWsC5Qq4DEWBL/F+KzzwmgAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="lX2gcKXwTkm29j8ZA+2plAAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="BurYPePRAkCl1UNIlJFiyAAA">
@@ -817,6 +823,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[3]" type="UMLGeneralizationView" guid="8wyKLLGM3keI1SGzdpnyEwAA">
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">254,146;254,93</XPD:ATTR>
 <XPD:REF name="Model">2qhzBk6CdU+zvi/x+IozJAAA</XPD:REF>
 <XPD:REF name="Head">iT60IFkIlku7RLYC1yzhkAAA</XPD:REF>
@@ -954,7 +961,7 @@
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[6]" type="UMLAssociationView" guid="g88dsJaJZUOXeEI48jJ/zAAA">
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">370,187;315,187</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">370,187;314,187</XPD:ATTR>
 <XPD:REF name="Model">i2ojT3m9hEqxv5C6JdOxggAA</XPD:REF>
 <XPD:REF name="Head">tnp4bTD6ckGynnBy+pxVhgAA</XPD:REF>
 <XPD:REF name="Tail">OzGLzHgnuke7dqFkxNNkEAAA</XPD:REF>

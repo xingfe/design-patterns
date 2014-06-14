@@ -334,8 +334,8 @@
 <XPD:REF name="Participant">fl4Dt79qqUms2YdmuD/iGAAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">K+AAdqFG1EyGdiVe8/oemwAA</XPD:REF>
-<XPD:REF name="Views[1]">mmH88QcOHEixhrN9Upx9uwAA</XPD:REF>
-<XPD:REF name="Views[2]">GSN5NLjHPE6QGBsNyyY0fAAA</XPD:REF>
+<XPD:REF name="Views[1]">GSN5NLjHPE6QGBsNyyY0fAAA</XPD:REF>
+<XPD:REF name="Views[2]">mmH88QcOHEixhrN9Upx9uwAA</XPD:REF>
 <XPD:REF name="Views[3]">JNubd2Gp0Eey4DCKCsRz/gAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="oPfEXPu5I0mjZSexnsRGGAAA">
@@ -344,8 +344,8 @@
 <XPD:REF name="Participant">4Sfx0bn9bUG2BI5Dv6T8qQAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">Ra53nAxs70KArzkMiurbmwAA</XPD:REF>
-<XPD:REF name="Views[1]">DjtdDV48DEe/b5f3J2tQPAAA</XPD:REF>
-<XPD:REF name="Views[2]">YS3RVW2TGU+DcadAl8k05gAA</XPD:REF>
+<XPD:REF name="Views[1]">YS3RVW2TGU+DcadAl8k05gAA</XPD:REF>
+<XPD:REF name="Views[2]">DjtdDV48DEe/b5f3J2tQPAAA</XPD:REF>
 <XPD:REF name="Views[3]">c/JXPFVImk+8sUyCgOPzqwAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -360,6 +360,7 @@
 <XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="OwnedDiagrams[0]" type="UMLSequenceDiagram" guid="Oh6p5K9lm0ivwoRhwJlBMAAA">
 <XPD:ATTR name="Name" type="string">SequenceDiagram1</XPD:ATTR>
+<XPD:ATTR name="MessageSignature" type="UMLMessageSignatureKind">mskNameAndType</XPD:ATTR>
 <XPD:REF name="DiagramOwner">nuOM0aUrNUuRGqKP/C8OVAAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLSequenceDiagramView" guid="BH6QZSDIqkuIg4QiJKksYQAA">
 <XPD:REF name="Diagram">Oh6p5K9lm0ivwoRhwJlBMAAA</XPD:REF>
@@ -473,7 +474,7 @@
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="vR2JusoxM0qjJFgHPv8OcQAA">
 <XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">2 : new Decorator()</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">2 : new Decorator(aConcreteComponent)</XPD:ATTR>
 <XPD:REF name="Model">w0Q0fGg+K025QINruI+LQgAA</XPD:REF>
 <XPD:REF name="HostEdge">GeUJ7C9ICESCYvWBWirQSgAA</XPD:REF>
 </XPD:OBJ>
@@ -653,6 +654,7 @@
 </XPD:OBJ>
 <XPD:OBJ name="ParticipatingStimuli[1]" type="UMLStimulus" guid="w0Q0fGg+K025QINruI+LQgAA">
 <XPD:ATTR name="Name" type="string">new Decorator</XPD:ATTR>
+<XPD:ATTR name="Arguments" type="string">aConcreteComponent</XPD:ATTR>
 <XPD:REF name="Sender">a6Ct6iP+P0i8lSOl4/Pp3gAA</XPD:REF>
 <XPD:REF name="Receiver">0oYUVxavwE62zqkAQJAzswAA</XPD:REF>
 <XPD:OBJ name="Action" type="UMLCallAction" guid="PVtPjIUlRkOjb/SeU7+nCAAA">

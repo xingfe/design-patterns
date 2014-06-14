@@ -510,6 +510,7 @@
 <XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="OwnedDiagrams[0]" type="UMLSequenceDiagram" guid="CJGRCOvOoU2mFhF0+Ar03QAA">
 <XPD:ATTR name="Name" type="string">SequenceDiagram1</XPD:ATTR>
+<XPD:ATTR name="MessageSignature" type="UMLMessageSignatureKind">mskNameAndType</XPD:ATTR>
 <XPD:REF name="DiagramOwner">LCUB4BtDmkiTaLH8XLoPigAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLSequenceDiagramView" guid="O8enp0fucEyHW2nMW8UFEQAA">
 <XPD:REF name="Diagram">CJGRCOvOoU2mFhF0+Ar03QAA</XPD:REF>
@@ -657,7 +658,7 @@
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="BY2gNTs1jE+buYQqax2bzwAA">
 <XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">3 : factoryMethod()</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">3 : factoryMethod(enum type)</XPD:ATTR>
 <XPD:REF name="Model">L579rXz36UKEzn43MJdVxgAA</XPD:REF>
 <XPD:REF name="HostEdge">PNkPLWC49UG6EuZSR88/lAAA</XPD:REF>
 </XPD:OBJ>
@@ -749,6 +750,7 @@
 </XPD:OBJ>
 <XPD:OBJ name="ParticipatingStimuli[2]" type="UMLStimulus" guid="L579rXz36UKEzn43MJdVxgAA">
 <XPD:ATTR name="Name" type="string">factoryMethod</XPD:ATTR>
+<XPD:ATTR name="Arguments" type="string">enum type</XPD:ATTR>
 <XPD:REF name="Sender">XyI4SakX7k+nV3BWlXK5xAAA</XPD:REF>
 <XPD:REF name="Receiver">XyI4SakX7k+nV3BWlXK5xAAA</XPD:REF>
 <XPD:OBJ name="Action" type="UMLCallAction" guid="xajgr0niv06/6pkj38jY+wAA">

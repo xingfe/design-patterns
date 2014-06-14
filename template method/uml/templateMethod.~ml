@@ -232,7 +232,7 @@
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="IOaO89sIU0ietV4zacqMEAAA">
 <XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">1 : new App()</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">1 : new Application()</XPD:ATTR>
 <XPD:REF name="Model">/JsszWATQEqxOKEvvc1wGwAA</XPD:REF>
 <XPD:REF name="HostEdge">qeGx3F2PXk+W/3+aq/I/qQAA</XPD:REF>
 </XPD:OBJ>
@@ -363,7 +363,7 @@
 </XPD:OBJ>
 <XPD:ATTR name="#ParticipatingStimuli" type="integer">4</XPD:ATTR>
 <XPD:OBJ name="ParticipatingStimuli[0]" type="UMLStimulus" guid="/JsszWATQEqxOKEvvc1wGwAA">
-<XPD:ATTR name="Name" type="string">new App</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">new Application</XPD:ATTR>
 <XPD:REF name="Sender">AKx5FHe16EyLMkEyH3mqAQAA</XPD:REF>
 <XPD:REF name="Receiver">Jp5MhQVCkka5H4txmAZL1wAA</XPD:REF>
 <XPD:OBJ name="Action" type="UMLCallAction" guid="4co+JMX+Hkaq66AVVwVSFQAA">

@@ -419,10 +419,9 @@
 <XPD:ATTR name="#Specializations" type="integer">2</XPD:ATTR>
 <XPD:REF name="Specializations[0]">ZiHCTXWt7EC0y0yBdeekQAAA</XPD:REF>
 <XPD:REF name="Specializations[1]">a5VwAmhkvUS9dYZDifDQFQAA</XPD:REF>
-<XPD:ATTR name="#TypedParameters" type="integer">3</XPD:ATTR>
+<XPD:ATTR name="#TypedParameters" type="integer">2</XPD:ATTR>
 <XPD:REF name="TypedParameters[0]">2sa/NVVM1kC/XRX9fC36WgAA</XPD:REF>
-<XPD:REF name="TypedParameters[1]">exYpUWiUMEqRQvUenaxNOAAA</XPD:REF>
-<XPD:REF name="TypedParameters[2]">jNoqZmzSTUmBxCLX2YgajwAA</XPD:REF>
+<XPD:REF name="TypedParameters[1]">jNoqZmzSTUmBxCLX2YgajwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[4]" type="UMLClass" guid="Yl8QG3x5n0mABanx2UylgQAA">
 <XPD:ATTR name="Name" type="string">Product1</XPD:ATTR>

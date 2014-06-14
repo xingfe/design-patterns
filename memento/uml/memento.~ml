@@ -50,7 +50,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[1]" type="UMLClassView" guid="hup+yLWsJU60rkZaHzsNsAAA">
-<XPD:ATTR name="Left" type="integer">240</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">256</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">20</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">105</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">82</XPD:ATTR>
@@ -79,7 +79,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[2]" type="UMLDependencyView" guid="klC3tHUaCUCNIKJGERKeXAAA">
-<XPD:ATTR name="Points" type="Points">165,60;240,60</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">165,60;256,60</XPD:ATTR>
 <XPD:REF name="Model">HmHQUQZ4NU+bvwrrrSYefAAA</XPD:REF>
 <XPD:REF name="Head">hup+yLWsJU60rkZaHzsNsAAA</XPD:REF>
 <XPD:REF name="Tail">kBX5ztsha0GziY2ORI+m8QAA</XPD:REF>
@@ -106,9 +106,9 @@
 <XPD:ATTR name="LineColor" type="string">clWhite</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">172</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">32</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">69</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">83</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">23</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">&lt;&lt;use&gt;&gt;
+<XPD:ATTR name="Text" type="string">&lt;&lt;create&gt;&gt;
 </XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -126,23 +126,23 @@
 <XPD:REF name="ClientDependencies[0]">HmHQUQZ4NU+bvwrrrSYefAAA</XPD:REF>
 <XPD:ATTR name="#Operations" type="integer">2</XPD:ATTR>
 <XPD:OBJ name="Operations[0]" type="UMLOperation" guid="M9B24MOkm0+7rigq/fLEtgAA">
-<XPD:ATTR name="Name" type="string">createMomento</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">createMemento</XPD:ATTR>
 <XPD:REF name="Owner">eB8FDy+pUUOSG0gRk495mwAA</XPD:REF>
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="5+TGlEbSmEG6KJsvwsBWQwAA">
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="hsq88GIrekudVxzWKIuh3wAA">
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">Momento</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">M9B24MOkm0+7rigq/fLEtgAA</XPD:REF>
+<XPD:REF name="Type_">UIEr79nw3UWsFnCq4PKh9AAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[1]" type="UMLOperation" guid="fyWa76CadUmseIKssfLkRgAA">
-<XPD:ATTR name="Name" type="string">setMomento</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">setMemento</XPD:ATTR>
 <XPD:REF name="Owner">eB8FDy+pUUOSG0gRk495mwAA</XPD:REF>
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="Z9/Zhsy3BkSG3j9isqHJwgAA">
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="uUG/GYdk4UybnO6n9I187gAA">
 <XPD:ATTR name="Name" type="string">m</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">Momento</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">fyWa76CadUmseIKssfLkRgAA</XPD:REF>
+<XPD:REF name="Type_">UIEr79nw3UWsFnCq4PKh9AAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:ATTR name="#Attributes" type="integer">1</XPD:ATTR>
@@ -183,6 +183,9 @@
 <XPD:REF name="BehavioralFeature">qsmrhY0x6kyIKxPMQbIktAAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
+<XPD:ATTR name="#TypedParameters" type="integer">2</XPD:ATTR>
+<XPD:REF name="TypedParameters[0]">hsq88GIrekudVxzWKIuh3wAA</XPD:REF>
+<XPD:REF name="TypedParameters[1]">uUG/GYdk4UybnO6n9I187gAA</XPD:REF>
 <XPD:ATTR name="#Attributes" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="BFPd3fArP0CtmlA3AJ3vGwAA">
 <XPD:ATTR name="Name" type="string">state</XPD:ATTR>
@@ -268,7 +271,7 @@
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="EseCVsLgrU+ahXHOU2hhKQAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="3dZ9DQAF7kaNGJbPQsvb4gAA">
 <XPD:ATTR name="FontStyle" type="integer">4</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">aMomento</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">aMemento</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="dVr7XMVJc0e5D66+Q/CkhQAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -324,7 +327,7 @@
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="RNJR2nqrJ0Ws19HFMZ7kXAAA">
 <XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">2 : createMomento()</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">2 : createMemento()</XPD:ATTR>
 <XPD:REF name="Model">iyE347HDqk28HFqr503+kAAA</XPD:REF>
 <XPD:REF name="HostEdge">nZREUYw6fEaG9sEtQdyG6AAA</XPD:REF>
 </XPD:OBJ>
@@ -358,7 +361,7 @@
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="/PfaI/CYAkSO+Yi8T01hUgAA">
 <XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">3 : new Momento()</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">3 : new Memento()</XPD:ATTR>
 <XPD:REF name="Model">DynXCBjoKk6UCyp0K5aEXAAA</XPD:REF>
 <XPD:REF name="HostEdge">LIhAgtZCOEuljU2D4Jv0GgAA</XPD:REF>
 </XPD:OBJ>
@@ -494,7 +497,7 @@
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="+Jc8l5iTb0OGabmm0zyqjAAA">
 <XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">7 : setMomento()</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">7 : setMemento()</XPD:ATTR>
 <XPD:REF name="Model">bx24RaA7pkK65796meIaGwAA</XPD:REF>
 <XPD:REF name="HostEdge">twccupdZ8EK2r69DSPHkbwAA</XPD:REF>
 </XPD:OBJ>
@@ -571,7 +574,7 @@
 <XPD:REF name="Views[3]">P0pJ+/+W3UqG2aGbsQB2bgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ParticipatingStimuli[1]" type="UMLStimulus" guid="iyE347HDqk28HFqr503+kAAA">
-<XPD:ATTR name="Name" type="string">createMomento</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">createMemento</XPD:ATTR>
 <XPD:REF name="Sender">RNNnL20BCU+FO4no73Eq3AAA</XPD:REF>
 <XPD:REF name="Receiver">cy5G7sl7DkCgOXlc7sr9twAA</XPD:REF>
 <XPD:OBJ name="Action" type="UMLCallAction" guid="zcpsIMLixE2G9XETkhf8sAAA">
@@ -585,7 +588,7 @@
 <XPD:REF name="Views[3]">dVFzlKzi/kuPQS9c/poDuwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ParticipatingStimuli[2]" type="UMLStimulus" guid="DynXCBjoKk6UCyp0K5aEXAAA">
-<XPD:ATTR name="Name" type="string">new Momento</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">new Memento</XPD:ATTR>
 <XPD:REF name="Sender">cy5G7sl7DkCgOXlc7sr9twAA</XPD:REF>
 <XPD:REF name="Receiver">W2psa+MRakKT3xj+un3ynwAA</XPD:REF>
 <XPD:OBJ name="Action" type="UMLCallAction" guid="TLBntsfQ/kOXUcBzq8u8eAAA">
@@ -641,7 +644,7 @@
 <XPD:REF name="Views[3]">B/bT6aZOy06dX9Zv+LgcvgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ParticipatingStimuli[6]" type="UMLStimulus" guid="bx24RaA7pkK65796meIaGwAA">
-<XPD:ATTR name="Name" type="string">setMomento</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">setMemento</XPD:ATTR>
 <XPD:REF name="Sender">RNNnL20BCU+FO4no73Eq3AAA</XPD:REF>
 <XPD:REF name="Receiver">cy5G7sl7DkCgOXlc7sr9twAA</XPD:REF>
 <XPD:OBJ name="Action" type="UMLCallAction" guid="8oANya/yUk+2h8PpAMfVzAAA">
@@ -701,7 +704,7 @@
 <XPD:REF name="ReceivingStimuli[4]">iyH8PY7aCEW4XVOeXfRgFAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ParticipatingInstances[2]" type="UMLObject" guid="W2psa+MRakKT3xj+un3ynwAA">
-<XPD:ATTR name="Name" type="string">aMomento</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">aMemento</XPD:ATTR>
 <XPD:REF name="CollaborationInstanceSet">V1klDWDCRkq4d0Tq4ZLSbQAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">2</XPD:ATTR>
 <XPD:REF name="Views[0]">LXHy7QULNEafepON0IakegAA</XPD:REF>
