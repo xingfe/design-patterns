@@ -290,6 +290,8 @@
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="qhwow5aroEaMDREPZ5A9ZwAA">
 <XPD:ATTR name="Name" type="string">strategy</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">Strategy</XPD:ATTR>
+<XPD:REF name="Type_">Q2Lw3BkuBU6XOq3NaziuvAAA</XPD:REF>
 <XPD:REF name="Owner">s2+bfWmFP0Sw5RE+sskKPQAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -310,6 +312,8 @@
 <XPD:ATTR name="Name" type="string">execute</XPD:ATTR>
 <XPD:REF name="Owner">Q2Lw3BkuBU6XOq3NaziuvAAA</XPD:REF>
 </XPD:OBJ>
+<XPD:ATTR name="#TypedFeatures" type="integer">1</XPD:ATTR>
+<XPD:REF name="TypedFeatures[0]">qhwow5aroEaMDREPZ5A9ZwAA</XPD:REF>
 <XPD:ATTR name="#Associations" type="integer">2</XPD:ATTR>
 <XPD:REF name="Associations[0]">ozi1Ps/psUCamrNwaNW8wAAA</XPD:REF>
 <XPD:REF name="Associations[1]">uDRM6J2qFUu3zW1+9FFTZQAA</XPD:REF>

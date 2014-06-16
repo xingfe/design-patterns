@@ -498,6 +498,7 @@
 <XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="OwnedDiagrams[0]" type="UMLSequenceDiagram" guid="tGz6DUx2gEaCac9d93v2sAAA">
 <XPD:ATTR name="Name" type="string">SequenceDiagram1</XPD:ATTR>
+<XPD:ATTR name="MessageSignature" type="UMLMessageSignatureKind">mskNameAndType</XPD:ATTR>
 <XPD:REF name="DiagramOwner">oeVKA+GsSUytIED/zkLvQwAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLSequenceDiagramView" guid="WFGUcQB3dEye9iILi68d1AAA">
 <XPD:REF name="Diagram">tGz6DUx2gEaCac9d93v2sAAA</XPD:REF>
@@ -633,7 +634,7 @@
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="PG3W2HgC102UkCNfz/5IgwAA">
 <XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">2 : new Command()</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">2 : new Command(aReceiver)</XPD:ATTR>
 <XPD:REF name="Model">BHz140PgPUC7eGGyJ3qyjAAA</XPD:REF>
 <XPD:REF name="HostEdge">u7KFM+cHg0aAKRiJzUGT7QAA</XPD:REF>
 </XPD:OBJ>
@@ -701,7 +702,7 @@
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="XwaGePMLNkmkpVDC3sX/lQAA">
 <XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">4 : addCommand()</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">4 : addCommand(aCommand)</XPD:ATTR>
 <XPD:REF name="Model">5nmOrrXpg0qeCQHqQgfJagAA</XPD:REF>
 <XPD:REF name="HostEdge">cORx/PAEY0CL4YxJmewSEwAA</XPD:REF>
 </XPD:OBJ>
@@ -847,6 +848,7 @@
 </XPD:OBJ>
 <XPD:OBJ name="ParticipatingStimuli[1]" type="UMLStimulus" guid="BHz140PgPUC7eGGyJ3qyjAAA">
 <XPD:ATTR name="Name" type="string">new Command</XPD:ATTR>
+<XPD:ATTR name="Arguments" type="string">aReceiver</XPD:ATTR>
 <XPD:REF name="Sender">9U5MwFBW/ESax0wyAdRZNAAA</XPD:REF>
 <XPD:REF name="Receiver">qwtMLZkIhUKlOP5MtT3EVwAA</XPD:REF>
 <XPD:OBJ name="Action" type="UMLCallAction" guid="TMa6fSHmZkGyB2Oly4eQ0QAA">
@@ -875,6 +877,7 @@
 </XPD:OBJ>
 <XPD:OBJ name="ParticipatingStimuli[3]" type="UMLStimulus" guid="5nmOrrXpg0qeCQHqQgfJagAA">
 <XPD:ATTR name="Name" type="string">addCommand</XPD:ATTR>
+<XPD:ATTR name="Arguments" type="string">aCommand</XPD:ATTR>
 <XPD:REF name="Sender">9U5MwFBW/ESax0wyAdRZNAAA</XPD:REF>
 <XPD:REF name="Receiver">n1/Gg0BmY0mG4x24e5i0ugAA</XPD:REF>
 <XPD:OBJ name="Action" type="UMLCallAction" guid="8WGoTOi6bUOGvIlUXT5mXgAA">

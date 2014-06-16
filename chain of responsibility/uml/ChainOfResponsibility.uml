@@ -273,6 +273,8 @@
 <XPD:REF name="Type_">caTqZRnrJ069yhW8rx1jWgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
+<XPD:ATTR name="#TypedFeatures" type="integer">1</XPD:ATTR>
+<XPD:REF name="TypedFeatures[0]">DCMbnP+fikmbfQMchvZBlQAA</XPD:REF>
 <XPD:ATTR name="#TypedParameters" type="integer">1</XPD:ATTR>
 <XPD:REF name="TypedParameters[0]">HhdxxP5uy0ST/y0nVe/AvwAA</XPD:REF>
 <XPD:ATTR name="#Associations" type="integer">3</XPD:ATTR>
@@ -283,6 +285,8 @@
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="DCMbnP+fikmbfQMchvZBlQAA">
 <XPD:ATTR name="Name" type="string">chainHandler</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">ChainHandler</XPD:ATTR>
+<XPD:REF name="Type_">caTqZRnrJ069yhW8rx1jWgAA</XPD:REF>
 <XPD:REF name="Owner">caTqZRnrJ069yhW8rx1jWgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>

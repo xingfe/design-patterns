@@ -5,14 +5,14 @@ using namespace std;
 class Implementor
 {
 public:
-	virtual void operation() = 0;
+	virtual void implementation() = 0;
 };
 
 
 class ConcreteImplementorA : public Implementor
 {
 public:
-	void operation()
+	void implementation()
 	{
 		cout << "ConcreteImplementorA::operation" << endl;
 	}
@@ -21,7 +21,7 @@ public:
 class ConcreteImplementorB : public Implementor
 {
 public:
-	void operation()
+	void implementation()
 	{
 		cout << "ConcreteImplementorB::operation" << endl;
 	}
@@ -38,7 +38,7 @@ public:
 	
 	virtual void operation() 
 	{
-		implementor.operation();
+		implementor.implementation();
 	}
 };
 
@@ -50,7 +50,7 @@ public:
 
 	void operation()
 	{
-		implementor.operation();
+		implementor.implementation();
 	}
 };
 

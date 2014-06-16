@@ -396,23 +396,19 @@
 <XPD:ATTR name="#Generalizations" type="integer">2</XPD:ATTR>
 <XPD:REF name="Generalizations[0]">Lz31/wVfIEyoA5GGsql2kQAA</XPD:REF>
 <XPD:REF name="Generalizations[1]">ViFms4VTxkGbEYy6Db73NgAA</XPD:REF>
-<XPD:ATTR name="#Operations" type="integer">3</XPD:ATTR>
-<XPD:OBJ name="Operations[0]" type="UMLOperation" guid="9L6vo5qv8kKOxGEOXsbI6QAA">
-<XPD:ATTR name="Name" type="string">method1</XPD:ATTR>
-<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
-<XPD:REF name="Owner">iI1uBhWm+EqKKqcJ+YSMOgAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Operations[1]" type="UMLOperation" guid="rsvfcrH/UEmOrOX6rTMYEgAA">
-<XPD:ATTR name="Name" type="string">method2</XPD:ATTR>
-<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
-<XPD:REF name="Owner">iI1uBhWm+EqKKqcJ+YSMOgAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Operations[2]" type="UMLOperation" guid="ryeo+2uAnUi6qN2dvxfJiQAA">
+<XPD:ATTR name="#Operations" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="Operations[0]" type="UMLOperation" guid="ryeo+2uAnUi6qN2dvxfJiQAA">
 <XPD:ATTR name="Name" type="string">operation</XPD:ATTR>
 <XPD:REF name="Owner">iI1uBhWm+EqKKqcJ+YSMOgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:ATTR name="#Associations" type="integer">1</XPD:ATTR>
 <XPD:REF name="Associations[0]">RN3oIDnWjEOCFgDm41ibhwAA</XPD:REF>
+<XPD:ATTR name="#Attributes" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="IwdjyvRm2Um9OUDhI6J4EAAA">
+<XPD:ATTR name="Name" type="string">adaptee</XPD:ATTR>
+<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
+<XPD:REF name="Owner">iI1uBhWm+EqKKqcJ+YSMOgAA</XPD:REF>
+</XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[2]" type="UMLGeneralization" guid="Lz31/wVfIEyoA5GGsql2kQAA">
 <XPD:REF name="Namespace">Wpk/87EfBE6ohr78tLxIYgAA</XPD:REF>

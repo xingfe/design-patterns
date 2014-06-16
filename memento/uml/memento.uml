@@ -149,6 +149,7 @@
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="h3RYR0Qkskmdhg/cczBckwAA">
 <XPD:ATTR name="Name" type="string">state</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">State</XPD:ATTR>
 <XPD:REF name="Owner">eB8FDy+pUUOSG0gRk495mwAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -190,6 +191,7 @@
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="BFPd3fArP0CtmlA3AJ3vGwAA">
 <XPD:ATTR name="Name" type="string">state</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">State</XPD:ATTR>
 <XPD:REF name="Owner">UIEr79nw3UWsFnCq4PKh9AAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
