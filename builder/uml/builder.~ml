@@ -58,6 +58,8 @@
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="c20JUhmt2EuMqKV7ee/xfgAA">
 <XPD:ATTR name="Name" type="string">builder</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">Builder</XPD:ATTR>
+<XPD:REF name="Type_">BVbNUV5a206dbaU0B8A3eQAA</XPD:REF>
 <XPD:REF name="Owner">bL78NiW7UkeO4ctd9u/4KAAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -81,6 +83,8 @@
 <XPD:ATTR name="Name" type="string">buildPart2</XPD:ATTR>
 <XPD:REF name="Owner">BVbNUV5a206dbaU0B8A3eQAA</XPD:REF>
 </XPD:OBJ>
+<XPD:ATTR name="#TypedFeatures" type="integer">1</XPD:ATTR>
+<XPD:REF name="TypedFeatures[0]">c20JUhmt2EuMqKV7ee/xfgAA</XPD:REF>
 <XPD:ATTR name="#Associations" type="integer">5</XPD:ATTR>
 <XPD:REF name="Associations[0]">ohxJ7Hl25Eupvdj66rpJqgAA</XPD:REF>
 <XPD:REF name="Associations[1]">MJXbHUOq3E281eSSyDqA2wAA</XPD:REF>
@@ -177,6 +181,8 @@
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="o852FsmIj0WkTXpsLmz92wAA">
 <XPD:ATTR name="Name" type="string">product</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">Product</XPD:ATTR>
+<XPD:REF name="Type_">sLzS2Vzy/06gsrQ13/zx7AAA</XPD:REF>
 <XPD:REF name="Owner">KWsC5Qq4DEWBL/F+KzzwmgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -198,6 +204,8 @@
 <XPD:REF name="Views[1]">AfH/IOucLk67K3pLmQefcAAA</XPD:REF>
 <XPD:REF name="Views[2]">i2ypg2/P80GRb/sJRGpObQAA</XPD:REF>
 <XPD:REF name="Views[3]">ltxzn9Wth0iBS/rvyUcRnAAA</XPD:REF>
+<XPD:ATTR name="#TypedFeatures" type="integer">1</XPD:ATTR>
+<XPD:REF name="TypedFeatures[0]">o852FsmIj0WkTXpsLmz92wAA</XPD:REF>
 <XPD:ATTR name="#Associations" type="integer">3</XPD:ATTR>
 <XPD:REF name="Associations[0]">/Y3/w5Ag3kighC648TG5gwAA</XPD:REF>
 <XPD:REF name="Associations[1]">FWCo9zrgC02hkZ+/qqStXQAA</XPD:REF>

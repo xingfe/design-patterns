@@ -32,7 +32,7 @@
 <XPD:ATTR name="Text" type="string">Iterator&lt;Element&gt;</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="StggnP3VW0+h3ZqQ5bYwNgAA">
-<XPD:ATTR name="Text" type="string">&lt;&lt;inetrface&gt;&gt;</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">&lt;&lt;interface&gt;&gt;</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="18PhTHE3AUeN3L1KrECqWAAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -386,7 +386,7 @@
 <XPD:ATTR name="#OwnedElements" type="integer">9</XPD:ATTR>
 <XPD:OBJ name="OwnedElements[0]" type="UMLClass" guid="5bNZAGYBS0SHiHAyF5oeaQAA">
 <XPD:ATTR name="Name" type="string">Iterator&lt;Element&gt;</XPD:ATTR>
-<XPD:ATTR name="StereotypeName" type="string">inetrface</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">interface</XPD:ATTR>
 <XPD:REF name="Namespace">NAX+rVRUbU+uknpCR8NwLwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">rdTvG+P1ikeIA3CW6oH9VwAA</XPD:REF>

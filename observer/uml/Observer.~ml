@@ -283,9 +283,9 @@
 <XPD:ATTR name="Name" type="string">getState</XPD:ATTR>
 <XPD:REF name="Owner">Bacv1kBZq0Ss+fcbKfSJ7wAA</XPD:REF>
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="mc/S565CwkeelBy2+wMBuQAA">
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="xtlg54KwHkOCPeKacgLRZAAA">
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">state</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">State</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">dExfmwWLv0OxNmDVisx16gAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -301,6 +301,7 @@
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="caD/idXVFk6wUUed9s7vSQAA">
 <XPD:ATTR name="Name" type="string">state</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">State</XPD:ATTR>
 <XPD:REF name="Owner">Bacv1kBZq0Ss+fcbKfSJ7wAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Attributes[1]" type="UMLAttribute" guid="Nw9PhwSLp06AiGaDKgnCWgAA">
