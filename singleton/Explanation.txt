@@ -1,4 +1,5 @@
-Singleton pattern gives client access to only one instance of class.
+Singleton pattern gives client access to only one instance of class
+and provide global method to do that.
 
 Use when:
 Use this appropach when class is memory expensive or its creation and

@@ -300,7 +300,7 @@
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="LBBNnGgOI0abg4qayEu5NwAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="O1oA0u8bXU65KCkMf9SdCAAA">
 <XPD:ATTR name="FontStyle" type="integer">4</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">cp1 : ConcretePrototype1</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">p1 : ConcretePrototype1</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="Ztb+FldvJkaXXw375wi5GQAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -314,15 +314,15 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[2]" type="UMLSeqObjectView" guid="8G6ThzzBzkK99mKvDbkHwAAA">
-<XPD:ATTR name="Left" type="integer">344</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">332</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">40</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">118</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">135</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">273</XPD:ATTR>
 <XPD:REF name="Model">99qvqlB5WUC+2PLrWYNa9gAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="ywN3DvkiW0yRGHt8OQZ9uAAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="/gMiOi8oH0y1O7kSXnei7gAA">
 <XPD:ATTR name="FontStyle" type="integer">4</XPD:ATTR>
-<XPD:ATTR name="Text" type="string"> : ConcretePrototype1</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">cpy : ConcretePrototype1</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="vklH9B2Zi0iIOpaoTK3Y4gAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -405,14 +405,14 @@
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[5]" type="UMLSeqStimulusView" guid="va53QOvU0UWW7VuoR5u6kAAA">
 <XPD:ATTR name="LineStyle" type="LineStyleKind">lsRectilinear</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">229,181;396,181</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">229,181;392,181</XPD:ATTR>
 <XPD:REF name="Model">I8fZUr9GTEi0hhYxh+dBkwAA</XPD:REF>
 <XPD:REF name="Head">0kFDvGSIKU+AR4jxOW9QKQAA</XPD:REF>
 <XPD:REF name="Tail">Ys2lnA6XG02AxTNdd1lS7AAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="0ppfAGSaZkWi7BESIPnO9QAA">
 <XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">3 : new ConcretePrototype1(cp1)</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">3 : new ConcretePrototype1(p1)</XPD:ATTR>
 <XPD:REF name="Model">I8fZUr9GTEi0hhYxh+dBkwAA</XPD:REF>
 <XPD:REF name="HostEdge">va53QOvU0UWW7VuoR5u6kAAA</XPD:REF>
 </XPD:OBJ>
@@ -431,7 +431,7 @@
 <XPD:REF name="HostEdge">va53QOvU0UWW7VuoR5u6kAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Activation" type="UMLActivationView" guid="hV44bjZ520Kf5t6hEvapPQAA">
-<XPD:ATTR name="Left" type="integer">396</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">392</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">181</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">14</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">29</XPD:ATTR>
@@ -505,7 +505,7 @@
 </XPD:OBJ>
 <XPD:OBJ name="ParticipatingStimuli[2]" type="UMLStimulus" guid="I8fZUr9GTEi0hhYxh+dBkwAA">
 <XPD:ATTR name="Name" type="string">new ConcretePrototype1</XPD:ATTR>
-<XPD:ATTR name="Arguments" type="string">cp1</XPD:ATTR>
+<XPD:ATTR name="Arguments" type="string">p1</XPD:ATTR>
 <XPD:REF name="Sender">H3t0iOwVZkWk81cf5ImkiAAA</XPD:REF>
 <XPD:REF name="Receiver">99qvqlB5WUC+2PLrWYNa9gAA</XPD:REF>
 <XPD:OBJ name="Action" type="UMLCallAction" guid="lEZUdIcUd06Kb/p4t07USwAA">
@@ -547,7 +547,7 @@
 <XPD:REF name="ReceivingStimuli[0]">NtanbsXZKk+7C14WvKRX1gAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ParticipatingInstances[1]" type="UMLObject" guid="H3t0iOwVZkWk81cf5ImkiAAA">
-<XPD:ATTR name="Name" type="string">cp1</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">p1</XPD:ATTR>
 <XPD:REF name="Classifier">IoFeIrYm00ileXkC+mN8FgAA</XPD:REF>
 <XPD:REF name="CollaborationInstanceSet">F4tHPFlT506DOkSM/a7lfQAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">2</XPD:ATTR>
@@ -561,6 +561,7 @@
 <XPD:REF name="ReceivingStimuli[1]">Q2LRAnb2ok2qkXFcjFv0KwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ParticipatingInstances[2]" type="UMLObject" guid="99qvqlB5WUC+2PLrWYNa9gAA">
+<XPD:ATTR name="Name" type="string">cpy</XPD:ATTR>
 <XPD:REF name="Classifier">IoFeIrYm00ileXkC+mN8FgAA</XPD:REF>
 <XPD:REF name="CollaborationInstanceSet">F4tHPFlT506DOkSM/a7lfQAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">2</XPD:ATTR>
