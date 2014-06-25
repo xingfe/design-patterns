@@ -5,74 +5,58 @@
 
 using namespace std;
 
-class Component 
-{
+class Node {
 public:
-	virtual void print() = 0;
-};
-
-class Composite : public Component
-{
-	string name;
-	vector<Component*> elements;
-public:
-	Composite(string s) : name(s) {}
-
-	void add(Component* element) { elements.push_back(element); }
-	void remove(Component* element) 
-	{ 
-		elements.erase(std::remove(elements.begin(), elements.end(), element), elements.end());
-	}
-	Component* getChild(int index) { return elements[index]; }
-
-	void print() 
-	{
-		cout << name << endl;
-		vector<Component*>::iterator it;
-		for (it = elements.begin(); it != elements.end(); ++it)
-			(*it)->print();
-	}
-	
-};
-
-class Leaf : public Component
-{
-	string name;
-public:
-
-	Leaf(string s) : name(s) {}
-	void print() 
-	{
-		cout << name << endl;
-	}
+  virtual void print(const string& pre) = 0;
 
 };
 
-class Direcotory : public Composite 
-{
+class Directory : public Node{
+  string name;
+  vector<Node*> elements;
 public:
-	Direcotory(string s) : Composite(s) {}
+  Directory(string s) : name(s) {}
+
+  void add(Node* element) { elements.push_back(element); }
+  void remove(Node* element) { 
+      elements.erase(std::remove(elements.begin(), elements.end(), element), elements.end());
+    }
+  Node* getChild(int index) { return elements[index]; }
+  
+  void print(const string& pre=" "){
+      
+    cout <<pre<<name << endl;
+      vector<Node*>::iterator it;
+      for (it = elements.begin(); it != elements.end(); ++it)
+	(*it)->print(pre+" ");
+  }
+  
 };
-class File : public Leaf 
-{
+  
+
+class File : public Node {
 public:
-	File(string s) : Leaf(s) {}
+  File(string s) : name(s) {}
+  void print(const string & pre){
+    cout<<pre<<name<<endl;
+  }
+private:
+  string name;
 };
 
-int main()
-{
-	Direcotory root("/");
-	Direcotory usr("usr");
-	Direcotory home("home");
-	Direcotory dev("dev");
-	File null("null");
-
-	root.add(&usr);
-	root.add(&dev);
-	root.add(&home);
-	dev.add(&null);
-	
-	root.print();
-
-	return 0;
+int main(){
+  Directory root("/");
+  Directory usr("usr");
+  Directory home("home");
+  Directory dev("dev");
+  File null("null");
+  
+  root.add(&usr);
+  root.add(&dev);
+  root.add(&home);
+  dev.add(&null);
+  
+  root.print();
+  
+  return 0;
 }
