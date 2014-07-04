@@ -1,6 +1,0 @@
-Decorator pattern adds new behavior dynamicaly this
-allow you to change behavior of existing object 
-without changing his inferface.
-
-Decorator is de facto alternative way to inheritance but
-is more flexible because you can add new behavior at runtime.

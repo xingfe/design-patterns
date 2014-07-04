@@ -1,2 +1,0 @@
-Memmento design pattern allow you to save inner state of object in order
-to bring back this state in a future.

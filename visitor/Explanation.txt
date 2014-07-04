@@ -1,4 +1,0 @@
-Visitor design pattern allows you to separate an algorithm from an 
-object structure on which it operates.
-This separation gives you ability to add new operations to existing object
-structures without modifying those structures. 

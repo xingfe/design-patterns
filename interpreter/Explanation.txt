@@ -1,2 +1,0 @@
-Interpreter pattern allow you to define a grammatical representation
-for a language and provides an interpreter to deal with this grammar.

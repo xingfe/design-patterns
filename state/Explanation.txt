@@ -1,2 +1,0 @@
-State pattern allow to change behavior of the object 
-according to his inner state. 

@@ -1,2 +1,0 @@
-Iterator design pattern give you uniform way to access to diffrent type
-of object collections.

@@ -1,5 +1,0 @@
-Command design pattern encapsulate a request as an object
-- operation and its arguments are wrap into object.
-Thanks this encapsulation you can easy create queue of commands
-or suport undo operation.
- 

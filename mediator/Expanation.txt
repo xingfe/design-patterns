@@ -1,2 +1,0 @@
-Mediator pattern allows to define an object that encapsulates how a set of 
-objects interact.

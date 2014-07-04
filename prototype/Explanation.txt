@@ -1,2 +1,0 @@
-Prototype design pattern allows to create new instance of object by copying
-it from a existing instance (prototype).
